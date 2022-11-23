@@ -1,3 +1,4 @@
 trick.json
 yarn.lock
 node_modules/*
+.gitignore
