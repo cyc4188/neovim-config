@@ -59,6 +59,8 @@ return require('packer').startup(function(use)
     use {
         "github/copilot.vim",
     }
+    -- bufdelete.nvim
+    use 'famiu/bufdelete.nvim'
 end)
 
 --
