@@ -55,6 +55,10 @@ return require('packer').startup(function(use)
             require("toggleterm").setup()
         end
     }
+    -- copilot
+    use {
+        "github/copilot.vim",
+    }
 end)
 
 --

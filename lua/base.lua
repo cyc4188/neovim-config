@@ -45,3 +45,5 @@ vim.opt.updatetime = 300
 -- always show the signcolumn
 vim.opt.signcolumn = "yes"
 
+-- clipboard
+vim.opt.clipboard = "unnamedplus"

@@ -2,3 +2,4 @@ trick.json
 yarn.lock
 node_modules/*
 .gitignore
+plugin/packer_compiled.lua
