@@ -52,3 +52,7 @@ vim.opt.clipboard = "unnamedplus"
 -- command line completion ignore case
 vim.opt.wildignorecase = true
 vim.opt.wildmenu = true
+
+
+-- enable copilot for markdown
+

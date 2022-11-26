@@ -6,3 +6,4 @@ require('configs.nvim-tree')
 require('bufferline').setup{}
 require('configs.lualine')
 require('configs.toggleterm')
+require('configs.copilot')
