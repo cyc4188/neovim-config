@@ -54,5 +54,18 @@ vim.opt.wildignorecase = true
 vim.opt.wildmenu = true
 
 
--- enable copilot for markdown
+-- markdown
+-- vim.g.mkdp_auto_start = 1
+-- vim.g.mkdp_auto_close = 1
+-- vim.g.mkdp_refresh_slow = 0
+-- vim.g.mkdp_command_for_global = 0
+-- vim.g.mkdp_echo_preview_url = 0
+-- vim.g.mkdp_browser = '/usr/bin/microsoft-edge-stable'
+-- vim.g.mkdp_filetypes = {'markdown'}
+-- 
+-- OpenMarkdownPreview = function(url)
+--     os.execute("microsoft-edge-stable --new-window " .. url)
+-- end
+-- vim.g.mkdp_browserfunc = OpenMarkdownPreview
+--
 

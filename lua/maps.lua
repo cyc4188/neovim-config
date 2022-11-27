@@ -125,3 +125,6 @@ keymap('t', '<ESC>', '<cmd>wincmd k<CR>', {silent = true, noremap = true} )
 ---------------------------- bufdelete -----------------------------------
 keymap('n', '<leader>bd', ':Bdelete<CR>', {silent = true, noremap = true})
 
+
+--------------------------- comment ------------------------------
+keymap('n', '<C-/>', ':CommentToggle<CR>', {silent = true, noremap = true})

@@ -59,6 +59,8 @@ return require('packer').startup(function(use)
     use 'zbirenbaum/copilot.lua'
     -- bufdelete.nvim
     use 'famiu/bufdelete.nvim'
+    -- comment
+    use 'terrortylor/nvim-comment'
 end)
 
 --
