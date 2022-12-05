@@ -61,6 +61,8 @@ return require('packer').startup(function(use)
     use 'famiu/bufdelete.nvim'
     -- comment
     use 'terrortylor/nvim-comment'
+    -- wilder indent
+    use 'gelguy/wilder.nvim'
 end)
 
 --
