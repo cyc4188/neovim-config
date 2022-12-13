@@ -1,5 +1,6 @@
 require('bufferline').setup{}
 require('configs.treesitter')
+require('configs.aerial')
 require('configs.telescope')
 
 vim.g.termguicolors = true

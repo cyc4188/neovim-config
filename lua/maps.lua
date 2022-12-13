@@ -109,6 +109,7 @@ keymap('n', '<leader>fg', builtin.live_grep, {})
 keymap('n', '<leader>fb', builtin.buffers, {})
 -- find helps
 keymap('n', '<leader>fh', builtin.help_tags, {})
+keymap('n', '<leader>fa', ":Telescope aerial<CR>", {})
 
 
 ---------------------------- config for Nvim Tree ---------------------------
