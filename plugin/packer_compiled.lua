@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/onedark.nvim",
     url = "https://github.com/navarasu/onedark.nvim"
   },
+  ["oxocarbon.nvim"] = {
+    loaded = true,
+    path = "/home/cyc/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/packer.nvim",

@@ -11,4 +11,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     end
 })
 
-require('onedark').load()
+-- use onedark theme
+-- require('onedark').load()
+
+-- use oxocarbon theme
+vim.opt.background = 'dark'
+vim.cmd.colorscheme 'oxocarbon'

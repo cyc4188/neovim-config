@@ -5,8 +5,13 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    ------------------- theme --------------------------------
     -- onedark theme
     use 'navarasu/onedark.nvim'
+
+    -- oxocarbon theme
+    use 'nyoom-engineering/oxocarbon.nvim'
+    ------------------- theme --------------------------------
 
     -- coc.nvim
     use {'neoclide/coc.nvim', branch='release'}
@@ -69,6 +74,7 @@ return require('packer').startup(function(use)
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
     })
     -- aerial.nvim
+    -- show function signature
     use 'stevearc/aerial.nvim'
 end)
 
