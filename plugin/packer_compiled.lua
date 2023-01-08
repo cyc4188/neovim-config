@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/aerial.nvim",
     url = "https://github.com/stevearc/aerial.nvim"
   },
+  ["align.nvim"] = {
+    loaded = true,
+    path = "/home/cyc/.local/share/nvim/site/pack/packer/start/align.nvim",
+    url = "https://github.com/Vonr/align.nvim"
+  },
   ["bufdelete.nvim"] = {
     loaded = true,
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/bufdelete.nvim",
@@ -124,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-ts-rainbow"] = {
+    loaded = true,
+    path = "/home/cyc/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
+    url = "https://github.com/p00f/nvim-ts-rainbow"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -159,6 +169,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["twilight.nvim"] = {
+    loaded = true,
+    path = "/home/cyc/.local/share/nvim/site/pack/packer/start/twilight.nvim",
+    url = "https://github.com/folke/twilight.nvim"
   },
   ["wilder.nvim"] = {
     loaded = true,

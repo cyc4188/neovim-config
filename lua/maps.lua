@@ -120,10 +120,43 @@ keymap('n', '<leader>nf', ":NvimTreeFindFile<CR>", {silent = true})
 
 
 ---------------------------- toggleterm -----------------------------------
-keymap('n', '<leader>t', ':ToggleTerm<CR>', {silent = true, noremap = true})
-keymap('t', '<ESC>', '<cmd>wincmd k<CR>', {silent = true, noremap = true} )
+-- keymap('n', '<leader>t', ':ToggleTerm<CR>', {silent = true, noremap = true})
+-- keymap('t', '<ESC>', '<cmd>wincmd k<CR>', {silent = true, noremap = true} )
+-- keymap('n', '<C-\\>', ':ToggleTerm<CR>', {silent = true, noremap = true})
+-- keymap('t', '<C-\\>', ':ToggleTerm<CR>', {silent = true, noremap = true})
 
 ---------------------------- bufdelete -----------------------------------
-keymap('n', '<leader>bd', ':Bdelete<CR>', {silent = true, noremap = true})
+keymap('n', '<leader>c', ':Bdelete<CR>', {silent = true, noremap = true})
 
+
+---------------------------- algin -----------------------------------
+--
+keymap('x', 'aa', function() require'align'.align_to_char(1, true)  end, {silent = true, noremap = true})
+-- Example gawip to align a paragraph to a string, looking left and with previews
+keymap(
+    'n',
+    'gaw',
+    function()
+        local a = require'align'
+        a.operator(
+            a.align_to_string,
+            { is_pattern = false, reverse = true, preview = true }
+        )
+    end,
+    { silent = true, noremap = true }
+)
+
+-- Example gaaip to aling a paragraph to 1 character, looking left
+keymap(
+    'n',
+    'gaa',
+    function()
+        local a = require'align'
+        a.operator(
+            a.align_to_char,
+            { length = 1, reverse = true }
+        )
+    end,
+    { silent = true, noremap = true }
+)
 

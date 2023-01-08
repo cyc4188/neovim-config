@@ -11,3 +11,8 @@ require('configs.copilot')
 require('configs.nvim-comment')
 require('configs.wilder')
 require('configs.nvim-surround')
+
+
+---------------------- default config ----------------------
+
+require('twilight').setup{}

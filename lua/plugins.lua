@@ -76,5 +76,13 @@ return require('packer').startup(function(use)
     -- aerial.nvim
     -- show function signature
     use 'stevearc/aerial.nvim'
+    -- nvim-ts-ranbow
+    -- rainbow parentheses
+    use 'p00f/nvim-ts-rainbow'
+
+    use "folke/twilight.nvim"
+
+    -- align
+    use 'Vonr/align.nvim'
 end)
 
