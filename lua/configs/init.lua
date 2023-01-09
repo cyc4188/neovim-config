@@ -16,3 +16,4 @@ require('configs.nvim-surround')
 ---------------------- default config ----------------------
 
 require('twilight').setup{}
+require('hop').setup{}

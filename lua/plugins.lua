@@ -56,9 +56,6 @@ return require('packer').startup(function(use)
     use {
         "akinsho/toggleterm.nvim",
         tag = '*',
-        config = function()
-            require("toggleterm").setup()
-        end
     }
     -- copilot
     use 'zbirenbaum/copilot.lua'
@@ -84,5 +81,9 @@ return require('packer').startup(function(use)
 
     -- align
     use 'Vonr/align.nvim'
+
+    -- hop.nvim
+    use 'phaazon/hop.nvim'
+
 end)
 

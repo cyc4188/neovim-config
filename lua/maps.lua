@@ -3,7 +3,8 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap.set
 
-keymap("i", "vv", "<ESC>")
+-- espace key
+keymap("i", "jk", "<ESC>")
 
 -- quit and write
 keymap("n", "<leader>q", "<Cmd>q<CR>")
@@ -116,21 +117,12 @@ keymap('n', '<leader>fa', ":Telescope aerial<CR>", {})
 keymap('n', '<C-n>', ":NvimTreeToggle<CR>", {silent = true})
 keymap('n', '<leader>nf', ":NvimTreeFindFile<CR>", {silent = true})
 
----------------------------- telescope ------------------------
-
-
----------------------------- toggleterm -----------------------------------
--- keymap('n', '<leader>t', ':ToggleTerm<CR>', {silent = true, noremap = true})
--- keymap('t', '<ESC>', '<cmd>wincmd k<CR>', {silent = true, noremap = true} )
--- keymap('n', '<C-\\>', ':ToggleTerm<CR>', {silent = true, noremap = true})
--- keymap('t', '<C-\\>', ':ToggleTerm<CR>', {silent = true, noremap = true})
 
 ---------------------------- bufdelete -----------------------------------
 keymap('n', '<leader>c', ':Bdelete<CR>', {silent = true, noremap = true})
 
 
 ---------------------------- algin -----------------------------------
---
 keymap('x', 'aa', function() require'align'.align_to_char(1, true)  end, {silent = true, noremap = true})
 -- Example gawip to align a paragraph to a string, looking left and with previews
 keymap(
@@ -160,3 +152,20 @@ keymap(
     { silent = true, noremap = true }
 )
 
+---------------------------------------------------- hop.nvim -----------------------------------
+local hop = require('hop')
+local directions = require('hop.hint').HintDirection
+keymap('', 'f', function()
+  hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true })
+end, {remap=true})
+keymap('', 'F', function()
+  hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true })
+end, {remap=true})
+keymap('', 't', function()
+  hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })
+end, {remap=true})
+keymap('', 'T', function()
+  hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })
+end, {remap=true})
+-- jump to word
+keymap('n', '<C-j>',":HopWord<CR>", {silent = true, noremap = true})

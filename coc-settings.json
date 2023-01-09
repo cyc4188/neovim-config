@@ -6,6 +6,9 @@
     "codeLens.enable": true,
     "python.pythonPath": "/usr/bin/python3",
     "python.formatting.autopep8Path": "~/.config/nvim/conda-use.sh",
-    "markdown-preview-enhanced.previewTheme": "github-light.css"
-
+    "markdown-preview-enhanced.previewTheme": "github-light.css",
+    "markdownlint.config": {
+        "default": true,
+        "line-length": false
+    },
 }

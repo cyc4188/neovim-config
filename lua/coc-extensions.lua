@@ -1,3 +1,4 @@
+-- list of coc extensions
 vim.g.coc_global_extensions = {
     'coc-json',
     'coc-tsserver',
