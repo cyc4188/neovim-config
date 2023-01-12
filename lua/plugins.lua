@@ -85,5 +85,6 @@ return require('packer').startup(function(use)
     -- hop.nvim
     use 'phaazon/hop.nvim'
 
+    use { 'yaocccc/vim-fcitx2en', event = 'InsertLeavePre' }
 end)
 

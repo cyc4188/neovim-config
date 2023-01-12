@@ -9,6 +9,7 @@
     "markdown-preview-enhanced.previewTheme": "github-light.css",
     "markdownlint.config": {
         "default": true,
-        "line-length": false
+        "line-length": false,
+        "no-multiple-blanks": false,
     },
 }

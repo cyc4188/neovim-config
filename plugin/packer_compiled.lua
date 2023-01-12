@@ -179,6 +179,13 @@ _G.packer_plugins = {
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/twilight.nvim",
     url = "https://github.com/folke/twilight.nvim"
   },
+  ["vim-fcitx2en"] = {
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/cyc/.local/share/nvim/site/pack/packer/opt/vim-fcitx2en",
+    url = "https://github.com/yaocccc/vim-fcitx2en"
+  },
   ["wilder.nvim"] = {
     loaded = true,
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/wilder.nvim",
@@ -187,6 +194,13 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Event lazy-loads
+time([[Defining lazy-load event autocommands]], true)
+vim.cmd [[au InsertLeavePre * ++once lua require("packer.load")({'vim-fcitx2en'}, { event = "InsertLeavePre *" }, _G.packer_plugins)]]
+time([[Defining lazy-load event autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
