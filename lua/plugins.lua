@@ -85,6 +85,7 @@ return require('packer').startup(function(use)
     -- hop.nvim
     use 'phaazon/hop.nvim'
 
+    -- normal模式自动将输入法切换为英文
     use { 'yaocccc/vim-fcitx2en', event = 'InsertLeavePre' }
 end)
 
