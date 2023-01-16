@@ -87,5 +87,7 @@ return require('packer').startup(function(use)
 
     -- normal模式自动将输入法切换为英文
     use { 'yaocccc/vim-fcitx2en', event = 'InsertLeavePre' }
+
+    use 'kevinhwang91/rnvimr'
 end)
 

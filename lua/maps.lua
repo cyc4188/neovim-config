@@ -169,3 +169,7 @@ keymap('', 'T', function()
 end, {remap=true})
 -- jump to word
 keymap('n', '<C-j>',":HopWord<CR>", {silent = true, noremap = true})
+
+
+----------------------------------------------- rnvimr -----------------------------------
+keymap('', '<leader>o', ":RnvimrToggle<CR>", {silent = true, noremap = true})
