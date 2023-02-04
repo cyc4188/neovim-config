@@ -172,4 +172,4 @@ keymap('n', '<C-j>',":HopWord<CR>", {silent = true, noremap = true})
 
 
 ----------------------------------------------- rnvimr -----------------------------------
-keymap('', '<leader>o', ":RnvimrToggle<CR>", {silent = true, noremap = true})
+keymap('n', '<leader>o', ":RnvimrToggle<CR>", {silent = true, noremap = true})

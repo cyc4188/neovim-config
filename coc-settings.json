@@ -12,4 +12,7 @@
         "line-length": false,
         "no-multiple-blanks": false,
     },
+    "git.enableGutters": true,
+    "rust-analyzer.lens.run.enable": false,
+    "rust-analyzer.lens.debug.enable": false,
 }
