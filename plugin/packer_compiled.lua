@@ -169,6 +169,11 @@ _G.packer_plugins = {
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/rnvimr",
     url = "https://github.com/kevinhwang91/rnvimr"
   },
+  ["telescope-coc.nvim"] = {
+    loaded = true,
+    path = "/home/cyc/.local/share/nvim/site/pack/packer/start/telescope-coc.nvim",
+    url = "https://github.com/fannheyward/telescope-coc.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/telescope.nvim",

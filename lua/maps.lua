@@ -61,7 +61,8 @@ keymap("n", "]g", "<Plug>(coc-diagnostic-next)", {silent = true})
 keymap("n", "gd", "<Plug>(coc-definition)", {silent = true})
 keymap("n", "gy", "<Plug>(coc-type-definition)", {silent = true})
 keymap("n", "gi", "<Plug>(coc-implementation)", {silent = true})
-keymap("n", "gr", "<Plug>(coc-references)", {silent = true})
+-- keymap("n", "gr", "<Plug>(coc-references)", {silent = true})
+keymap("n", "gr", ":Telescope coc references<CR>", {silent = true})
 
 -- Use K to show documentation in preview window.
 function _G.show_docs()

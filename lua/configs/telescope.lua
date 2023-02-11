@@ -9,6 +9,10 @@ telescope.setup{
                 json = true,   -- You can set the option for specific filetypes
                 yaml = true,
             }
+        },
+        coc = {
+            -- theme = 'ivy',
+            prefer_locations = true,
         }
     },
     defaults = {
@@ -34,6 +38,7 @@ telescope.setup{
         },
     },
 }
+require('telescope').load_extension('coc')
 ----------------- default mappings -----------------------
 -- <C-n>/<Down>	Next item
 -- <C-p>/<Up>	Previous item
