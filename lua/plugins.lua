@@ -99,6 +99,8 @@ return require('packer').startup(function(use)
 
     -- normal模式自动将输入法切换为英文
     use { 'yaocccc/vim-fcitx2en', event = 'InsertLeavePre' }
+    -- 高亮{}范围
+    use { 'yaocccc/nvim-hlchunk', event = { 'CursorMoved', 'CursorMovedI' } }
 
     -- ranger in the nvim
     use 'kevinhwang91/rnvimr'

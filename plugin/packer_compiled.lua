@@ -119,6 +119,13 @@ _G.packer_plugins = {
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
+  ["nvim-hlchunk"] = {
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/cyc/.local/share/nvim/site/pack/packer/opt/nvim-hlchunk",
+    url = "https://github.com/yaocccc/nvim-hlchunk"
+  },
   ["nvim-scrollbar"] = {
     loaded = true,
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/nvim-scrollbar",
@@ -214,6 +221,8 @@ vim.cmd [[au!]]
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
 vim.cmd [[au InsertLeavePre * ++once lua require("packer.load")({'vim-fcitx2en'}, { event = "InsertLeavePre *" }, _G.packer_plugins)]]
+vim.cmd [[au CursorMoved * ++once lua require("packer.load")({'nvim-hlchunk'}, { event = "CursorMoved *" }, _G.packer_plugins)]]
+vim.cmd [[au CursorMovedI * ++once lua require("packer.load")({'nvim-hlchunk'}, { event = "CursorMovedI *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 
