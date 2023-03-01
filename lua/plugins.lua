@@ -1,5 +1,15 @@
 -- Only required if you have packer configured as `opt`
-vim.cmd [[packadd packer.nvim]]
+--
+
+local install_path = vim.fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+local compiled_path = vim.fn.stdpath('config')..'/plugin/packer_compiled.lua'
+if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
+    print('Installing packer.nvim...')
+    G.fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    G.fn.system({'rm', '-rf', compiled_path})
+    vim.cmd [[packadd packer.nvim]]
+end
+
 
 return require('packer').startup(function(use)
     -- Packer can manage itself
@@ -90,6 +100,9 @@ return require('packer').startup(function(use)
     -- normal模式自动将输入法切换为英文
     use { 'yaocccc/vim-fcitx2en', event = 'InsertLeavePre' }
 
+    -- ranger in the nvim
     use 'kevinhwang91/rnvimr'
+
+    use 'petertriho/nvim-scrollbar'
 end)
 

@@ -17,3 +17,4 @@ require('configs.nvim-surround')
 
 require('twilight').setup{}
 require('hop').setup{}
+require('scrollbar').setup{}

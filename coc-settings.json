@@ -13,6 +13,14 @@
         "no-multiple-blanks": false,
     },
     "git.enableGutters": true,
+    "git.floatConfig": { "border": true, "rounded": true },
     "rust-analyzer.lens.run.enable": false,
     "rust-analyzer.lens.debug.enable": false,
+    "rust-analyzer.lens.enable": false,
+
+    "hover.floatConfig": { "border": true, "rounded": true, "focusable": true },
+    "suggest.floatConfig": { "border": true, "rounded": true },
+    "diagnostic.floatConfig": { "border": true, "rounded": true },
+    "signature.floatConfig": { "border": true, "rounded": true },
+    "notification.disabledProgressSources": ["*"],
 }

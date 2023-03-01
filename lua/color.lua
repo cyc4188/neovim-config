@@ -11,6 +11,16 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     end
 })
 
+vim.cmd([[
+    hi Normal ctermfg=7 ctermbg=NONE cterm=NONE \" 添加默认颜色设置 避免载入主题时报错
+    colorscheme solarized8_high
+    let &t_SI .= '\e[5 q'
+    let &t_EI .= '\e[1 q'
+    let &t_vb = ''
+    let &t_ut = ''
+]])
+
+
 -- use onedark theme
 require('onedark').load()
 

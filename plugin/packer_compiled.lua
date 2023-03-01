@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
+  ["nvim-scrollbar"] = {
+    loaded = true,
+    path = "/home/cyc/.local/share/nvim/site/pack/packer/start/nvim-scrollbar",
+    url = "https://github.com/petertriho/nvim-scrollbar"
+  },
   ["nvim-surround"] = {
     loaded = true,
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/nvim-surround",

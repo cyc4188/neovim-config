@@ -1,6 +1,6 @@
-require('configs.init')
 require('base')
+require('color')
+require('configs.init')
 require('coc-extensions')
 require('maps')
-require('color')
 require('plugins')
