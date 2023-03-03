@@ -12,3 +12,6 @@ vim.g.coc_global_extensions = {
     'coc-pairs',
     'coc-git',
 }
+
+vim.cmd("hi! link CocPum Pmenu")
+vim.cmd("hi! link CocMenuSel PmenuSel")
