@@ -106,5 +106,7 @@ return require('packer').startup(function(use)
     use 'kevinhwang91/rnvimr'
 
     use 'petertriho/nvim-scrollbar'
+    -- wakatime: record time
+    use 'wakatime/vim-wakatime'
 end)
 

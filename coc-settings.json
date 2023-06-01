@@ -22,5 +22,8 @@
     "suggest.floatConfig": { "border": true, "rounded": true },
     "diagnostic.floatConfig": { "border": true, "rounded": true },
     "signature.floatConfig": { "border": true, "rounded": true },
-    "notification.disabledProgressSources": ["*"],
+    "notification.disabledProgressSources": [
+      "*"
+    ],
+    "snippets.ultisnips.pythonPrompt": false,
 }

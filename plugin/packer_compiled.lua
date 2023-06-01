@@ -208,6 +208,11 @@ _G.packer_plugins = {
     path = "/home/cyc/.local/share/nvim/site/pack/packer/opt/vim-fcitx2en",
     url = "https://github.com/yaocccc/vim-fcitx2en"
   },
+  ["vim-wakatime"] = {
+    loaded = true,
+    path = "/home/cyc/.local/share/nvim/site/pack/packer/start/vim-wakatime",
+    url = "https://github.com/wakatime/vim-wakatime"
+  },
   ["wilder.nvim"] = {
     loaded = true,
     path = "/home/cyc/.local/share/nvim/site/pack/packer/start/wilder.nvim",
@@ -220,9 +225,9 @@ vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au InsertLeavePre * ++once lua require("packer.load")({'vim-fcitx2en'}, { event = "InsertLeavePre *" }, _G.packer_plugins)]]
 vim.cmd [[au CursorMoved * ++once lua require("packer.load")({'nvim-hlchunk'}, { event = "CursorMoved *" }, _G.packer_plugins)]]
 vim.cmd [[au CursorMovedI * ++once lua require("packer.load")({'nvim-hlchunk'}, { event = "CursorMovedI *" }, _G.packer_plugins)]]
+vim.cmd [[au InsertLeavePre * ++once lua require("packer.load")({'vim-fcitx2en'}, { event = "InsertLeavePre *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 

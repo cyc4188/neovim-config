@@ -54,3 +54,8 @@ vim.opt.wildignorecase = true
 vim.opt.wildmenu = true
 
 
+-- 持久化撤销
+vim.opt.undofile = true
+vim.opt.undodir = os.getenv('HOME') .. '/.config/nvim/cache/undodir'
+
+
