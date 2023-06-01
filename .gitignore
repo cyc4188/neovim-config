@@ -1,5 +1,6 @@
 trick.json
 yarn.lock
 node_modules/*
+cache/*
 .gitignore
 plugin/packer_compiled.lua
